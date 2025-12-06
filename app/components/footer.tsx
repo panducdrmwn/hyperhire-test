@@ -38,7 +38,7 @@ export default function Footer({
                 ))}
             </div>
         </div>
-        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 w-full pt-8 sm:pt-10 md:pt-14'>
+        <div className='grid grid-cols-2 grid-rows-3 sm:grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-6 w-full pt-8 sm:pt-10 md:pt-14'>
            <div className='flex flex-col gap-2'>
             <span className='font-black text-[#343741] text-[11px] sm:text-[12px]'>상호명</span>
             <span className='font-black text-[#5E626F] text-[10px] sm:text-[11px] md:text-[13px]'>하이퍼하이어</span>
@@ -49,12 +49,12 @@ export default function Footer({
             <span className='font-black text-[#5E626F] text-[10px] sm:text-[11px] md:text-[13px]'>김주현</span>
             <span className='font-black text-[#5E626F] text-[10px] sm:text-[11px] md:text-[13px]'>Juhyun Kim</span>
            </div>
-           <div className='flex flex-col gap-2'>
+           <div className='flex flex-col gap-2 row-start-2 md:row-auto'>
             <span className='font-black text-[#343741] text-[11px] sm:text-[12px]'>사업자등록번호 CIN</span>
             <span className='font-black text-[#5E626F] text-[10px] sm:text-[11px] md:text-[13px] break-words'>427-86-01187</span>
             <span className='font-black text-[#5E626F] text-[10px] sm:text-[11px] md:text-[13px] break-words'>U74110DL2016PTC290812</span>
            </div>
-           <div className='flex flex-col gap-2'>
+           <div className='flex flex-col gap-2 row-start-3 col-span-2 md:row-auto'>
             <span className='font-black text-[#343741] text-[11px] sm:text-[12px]'>주소 ADDRESS</span>
             <span className='font-black text-[#5E626F] text-[10px] sm:text-[11px] md:text-[13px]'>서울특별시 강남대로 479, 지하 1층 238호</span>
             <span className='font-black text-[#5E626F] text-[10px] sm:text-[11px] md:text-[13px]'>
