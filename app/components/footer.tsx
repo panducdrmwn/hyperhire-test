@@ -17,7 +17,7 @@ export default function Footer({
         { id: 4, image: "/Frame 5045.png", title: "해외 개발자 활용 서비스" },
     ]}: FooterMenuProps) {
   return (
-    <footer className='bg-[rgba(251,251,251,1)] flex flex-col px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-48 py-12 sm:py-16 md:py-20'>
+    <footer className='bg-[rgba(251,251,251,1)] flex flex-col px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-[300px] py-12 sm:py-16 md:py-20'>
         <div className='flex flex-col lg:flex-row gap-8 lg:gap-12 xl:gap-16 w-full'>
             <div className='flex flex-col gap-3 sm:gap-4 w-full lg:w-auto'>
                 <Image src={'/Frame 2012.png'} width={187} height={34} alt='footer-logo' className='w-[150px] sm:w-[170px] md:w-[187px] h-auto'/>

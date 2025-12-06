@@ -67,7 +67,7 @@ export default function ServiceSlide({
       >
         {slides.map((slide) => (
           <SwiperSlide key={slide.id}>
-            <div className="flex flex-row items-center gap-3 sm:gap-4 md:gap-6 p-3 sm:p-4 bg-[rgba(255,255,255,0.2)] sm:w-[332px] md:w-[332px] lg:w-[290px] xl:w-[290px] 2xl:w-[290px] h-[72px] sm:h-[80px] md:h-[88px] rounded-xl sm:rounded-2xl">
+            <div className="flex flex-row items-center gap-3 sm:gap-4 md:gap-6 p-3 sm:p-4 bg-[rgba(255,255,255,0.2)] sm:w-[332px] md:w-[332px] lg:w-[290px] xl:w-[290px] 2xl:w-[332px] h-[72px] sm:h-[80px] md:h-[88px] rounded-xl sm:rounded-2xl">
               <Image
                 src={slide.image}
                 width={56}

@@ -21,7 +21,9 @@ const Navbar = () => {
     }
   }
   
-  window.addEventListener('scroll',IsVisible)
+  useEffect(()=>{
+    window.addEventListener('scroll',IsVisible)
+  })
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -44,9 +46,8 @@ const Navbar = () => {
     }
   }, [isOpen])
 
-  console.log(isOpen)
   return (
-    <nav className={`fixed w-full flex z-20 items-center justify-between px-3 sm:px-4 md:px-6 lg:px-12 xl:px-16 2xl:px-48 py-3 sm:py-4 ${visible? 'bg-[rgba(105,203,216,0.9)]' :  'bg-transparent'}`}>
+    <nav className={`fixed w-full flex z-20 items-center justify-between px-3 sm:px-4 md:px-6 lg:px-12 xl:px-16 2xl:px-[300px] py-3 sm:py-4 ${visible? 'bg-[rgba(105,203,216,0.9)]' :  'bg-transparent'}`}>
       <div className="flex items-center">
         <Image src="/logo.png" alt="logo" width={114} height={21} className="w-20 sm:w-24 md:w-[100px] lg:w-[114px] h-auto" />
       </div>

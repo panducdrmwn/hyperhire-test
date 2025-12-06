@@ -3,6 +3,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow, Navigation } from "swiper/modules";
 import Image from "next/image";
+import { useState, useEffect } from "react";
 
 import "swiper/css";
 import "swiper/css/effect-coverflow";
@@ -20,14 +21,25 @@ export default function SwiperCoverflow({
     { id: 1, image: "/Ellipse 12.png" },
     { id: 2, image: "/Ellipse 12.png" },
     { id: 3, image: "/Ellipse 12.png" }, 
+
   ],
 }: SwiperCoverflowProps) {
+  const [swiper, setSwiper] = useState<any>(null);
+
+  useEffect(() => {
+    if (swiper) {
+      const timer = setTimeout(() => {
+        swiper.slideTo(1);
+      }, 0);
+      return () => clearTimeout(timer);
+    }
+  }, [swiper]);
   return (
     <div className="w-full h-full flex items-center justify-center">
       <Swiper
-        loop={true}
-        initialSlide={2}
-        cssMode={false}
+        onSwiper={(s) => {
+          setSwiper(s);
+        }}
         effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}

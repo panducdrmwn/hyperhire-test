@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <div className="flex min-h-screen w-full">
       <main
-        className="flex pt-16 sm:pt-20 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-48 min-h-screen w-full flex-col bg-cover bg-no-repeat bg-center"
+        className="flex pt-16 sm:pt-20 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-42 2xl:px-[300px] min-h-screen w-full flex-col bg-cover bg-no-repeat bg-center"
         style={{
           backgroundImage: 'url("/Group 5201.png")',
         }}
@@ -65,7 +65,7 @@ export default function Home() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
               >
-                최고의 실력을 가진 <br className="block sm:hidden" /> <span className="sm:hidden"> </span>외국인 인재를 찾고 계신가요?
+                최고의 실력을 가진 <br  /> 외국인 인재를 찾고 계신가요?
               </motion.h1>
               <motion.p
                 id="subtitle"
