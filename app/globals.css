@@ -32,6 +32,13 @@ body {
   transition: all 300ms;
 }
 
+.swiper-coverflow .swiper-button-next{
+  right: var(--swiper-navigation-sides-offset, -6px);
+}
+
+.swiper-coverflow .swiper-button-prev{
+  left:  var(--swiper-navigation-sides-offset, -6px);;
+}
 
 .swiper-coverflow .swiper-button-next,
 .swiper-coverflow .swiper-button-prev {
