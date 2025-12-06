@@ -1,5 +1,4 @@
 "use client";
-import Navbar from "./components/navbar";
 import Image from "next/image";
 import SwiperCoverflow from "./components/SwiperCoverflow";
 import ServiceSlide from "./components/ServiceSlide";
