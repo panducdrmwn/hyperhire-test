@@ -22,7 +22,7 @@ export default function ProfileCard({
   className = '',
 }: ProfileCardProps) {
   return (
-    <div className={` h-full flex flex-col justify-center items-center bg-white rounded-xl sm:rounded-2xl px-4 sm:px-6 md:px-8 py-4 sm:py-6 ${className}`}>
+    <div className={` h-full flex flex-col justify-center items-center bg-white rounded-xl sm:rounded-2xl px-8 sm:px-6 md:px-8 py-8 sm:py-6 ${className}`}>
       <div className="flex justify-center mb-3 sm:mb-4 relative">
         <div className="relative inline-block">
           <Image

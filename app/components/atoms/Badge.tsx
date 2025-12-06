@@ -23,7 +23,7 @@ export default function Badge({
   
   const sizes = {
     sm: 'text-[11px] sm:text-[12px] py-[3px] px-[6px] sm:px-[8px]',
-    md: 'text-[12px] sm:text-[14px] md:text-[16px] py-[3px] sm:py-[4px] px-[2px] sm:px-[10px]',
+    md: 'text-[12px] sm:text-[14px] md:text-[16px] py-[3px] sm:py-[4px] px-[10px] sm:px-[10px]',
     lg: 'text-[14px] sm:text-[16px] md:text-[18px] py-2 px-4',
   };
 
